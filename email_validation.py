@@ -49,3 +49,24 @@ def name_validation(x):
      print("Invalid input. Please use alphabetic characters only.")
      
 name_validation(user_input)
+
+
+### a program that check if the name and pass is correct using dictionary
+
+
+user = [{"name":"omar","pass":"123"},{"name":"ahmed","pass":"456"}]
+userInput=input("enter ur name:  ")
+for i in user:
+    if i["name"] ==userInput:
+        userPass=input("enter ur pass:  ")
+        if i["pass"] ==userPass:
+            print("ur pass correct")
+            break
+        else:
+            print("uncorrect password")
+        break
+    
+    else:
+        continue
+else:
+    print("not found")
